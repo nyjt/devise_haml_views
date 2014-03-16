@@ -1,0 +1,11 @@
+.row
+  .col-lg-6
+    %a.btn.btn-default.btn-block.btn-large{class: (controller_name == 'sessions') ? 'active' : '', :href => (controller_name == 'sessions') ? '#' : new_session_path(resource_name)}
+      = t('devise.labels.sign_in')
+  -if devise_mapping.recoverable?
+    .col-lg-6
+      %a.btn.btn-default.btn-block.btn-large{:href => (controller_name == 'passwords') ? '#' : new_password_path(resource_name), class: (controller_name == 'passwords') ? 'active' : ''}
+        = t("devise.labels.forgot_password")
+.row
+  .col-lg-12
+    =devise_error_messages!

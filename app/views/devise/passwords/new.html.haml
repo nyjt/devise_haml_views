@@ -1,0 +1,10 @@
+= render partial: 'devise/shared/header'
+= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+  =devise_error_messages!
+  .form-fields
+    .controls
+      %h3= t("devise.labels.forgot_password")
+  .form-fields
+    = f.input :email, :label => t('devise.labels.email')
+  .well.form-actions= f.submit t("devise.labels.send_me_reset_password_instructions"), :class => 'btn btn-primary'
+= render "devise/shared/links"

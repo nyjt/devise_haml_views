@@ -1,0 +1,36 @@
+en:
+  devise:
+    labels:
+      sign_in: 'Sign in'
+      login: 'Belépés'
+      remember_me: 'Remember me'
+      password: 'Password'
+      email: 'Email'
+      sign_in_with: "Sign in with %{provider} "
+      not_receive_unlock: "Didn't receive unlock instructions?"
+      not_receive_confirmation: "Didn't receive confirmation instructions?"
+      forgot_password: "Forgot your password?"
+      sign_up: "Sign up"
+      resend_unlock_instructions: "Resend unlock instructions"
+      resend_confirmation_instructions: 'Resend confirmation instructions'
+      send_me_reset_password_instructions: 'Send me resend password instructions'
+      change_password: 'Change password'
+      new_password: 'New password'
+      confirm_new_password: 'New password confirmation'
+      current_password: 'Current password'
+      password_confirmation: 'Password confirmation'
+      edit_profile: 'Edit profile'
+      update: 'Update'
+      cancel_my_account: 'Cancel my account'
+      are_you_sure_delete: 'Are you sure you delete?'
+      back: 'Back'
+      logout: 'Logout'
+  mydevise:
+    access_error: 'Sorry, I cannot serve your request, because you have no right access for this.'
+    permissions:
+      index:
+        deny:   'Deny'
+        accept: 'Accept'
+    breadcrumbs:
+      access_manager: 'Access Manager'
+      users_manager: 'Users Manager'

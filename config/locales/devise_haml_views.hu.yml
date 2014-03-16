@@ -1,0 +1,96 @@
+hu:
+  devise:
+    labels:
+      sign_in: 'Bejelentkezés'
+      login: 'Belépés'
+      logout: 'Kilépés'
+      edit_account: 'Profilom módosítása'
+      remember_me: 'Emlékezz rám'
+      password: 'Jelszó'
+      email: 'E-mail cím'
+      sign_in_with: "Bejelentkezés %{provider} fiókkal"
+      not_receive_unlock: "Nem érkezett meg az e-mail a zár feloldásához?" # Didn't receive unlock instructions?
+      not_receive_confirmation: "Nem érkezett meg a regisztráció jóváhagyásához szükséges e-mail?" # Didn't receive confirmation instructions?
+      forgot_password: 'Elfelejtett jelszó helyreállítása' # Forgot your password?
+      sign_up: 'Regisztráció'
+      resend_unlock_instructions: 'Zárolt fiók feloldásához szükséges e-mail újraküldése'
+      resend_confirmation_instructions: 'Regisztráció jováhagyásához szükséges e-mail újraküldése'
+      send_me_reset_password_instructions: 'Jelszó helyreállító e-mail kiküldése'
+      change_password: 'Jelszó megváltoztatása'
+      new_password: 'Új jelszó'
+      confirm_new_password: 'Új jelszó megerosítése'
+      current_password: 'Jelenlegi jelszó'
+      password_confirmation: 'Jelszó megerősítése'
+      edit_profile: 'Felhasználói profil módosítása'
+      update: 'Módosítások mentése'
+      cancel_my_account: 'Felhasználói fiókom végleges törlése'
+      are_you_sure_delete: 'A művelet nem vonható vissza. Biztos, hogy véglegesen törljem a felhasználó fiókját annak minden adatával együtt?'
+      back: 'Vissza'
+  mydevise:
+    access_error: 'Sajnos nincs megfelelő jogosultsága, hogy ezen az oldalon legyen.'
+    permissions:
+      index:
+        deny:   'Tiltott'
+        accept: 'Szabad'
+    breadcrumbs:
+      access_manager: 'Rendszer hozzáférések'
+      user_manager: 'Felhasználó kezelő'
+      group_manager: 'Csoport kezelő'
+    users:
+      delete:
+        sure: 'Biztosan törlöd ezt a felhasználót?'
+      index:
+        groups: 'Csoportok'
+        actions: 'Műveletek'
+        login_at: 'Utolsó belépés'
+        email: 'E-mail'
+        name: 'Név'
+        listing_users: 'Felhasználók listája'
+        show: 'Adatlap'
+        edit: 'Szerkeszt'
+        destroy: 'Töröl'
+      show:
+        groups: 'Csoportok'
+        actions: 'Műveletek'
+        login_at: 'Utolsó belépés'
+        email: 'E-mail'
+        name: 'Név'
+        listing_users: 'Felhasználók listája'
+        show: 'Adatlap'
+        edit: 'Módosít'
+        destroy: 'Töröl'
+        new: 'Új felhasználó'
+        permission: 'Jogosultságok'
+        index: 'Felhasználók listája'
+        update: 'Szerkeszt'
+        related_actions: 'Kapcsolódó műveletek'
+        created_at: 'Létrehozva'
+        updated_at: 'Módosítva'
+  mongoid:
+    models:
+      user:
+        one: "Felhasználó"
+        others: 'Felhasználók'
+    attributes:
+      user:
+        name: 'Név'
+        password: 'Jelszó'
+        email: 'E-mail'
+        current_password: 'Jelenlegi jelszó'
+      #models:
+      #  user:
+      #    attributes:
+      #      email:
+      #        invalid: 'A megadott e-mail cím hibás.'
+      #        #blank: 'Nincs megadva e-mail cím.'
+      #      password:
+      #        #blank: 'Nincs jelszó megadva.'
+      #        confirmation: 'A két jelszó különbözik egymástól.'
+      #      encrypted_password:
+      #        #blank: 'Nem sikerült titkosítani a jelszót, mert üres.'
+
+
+
+  time:
+    formats:
+      default: '%Y.%m.%d %H:%M'

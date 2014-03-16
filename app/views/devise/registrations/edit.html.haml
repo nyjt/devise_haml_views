@@ -1,0 +1,25 @@
+= devise_error_messages!
+= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
+  .form-fields
+    .controls
+      %h2= t('devise.labels.edit_profile')
+  .form-fields
+    = f.input :email, label: t('devise.labels.e-mail')
+    = f.input :password, label: t('devise.labels.password'), :input_html => {:autocomplete => "off"}
+    = f.input :password_confirmation, label: t('devise.labels.password_confirmation')
+    = f.input :current_password, label: t('devise.labels.current_password')
+  .well.form-actions
+    .row
+      .span4
+        = f.submit t('devise.labels.update'), :class => 'btn btn-primary'
+      .offset2.span2
+        = link_to t('devise.labels.back'), :back, :class=> "btn"
+  .form-fields
+    .controls
+      %h2= t('devise.labels.cancel_my_account')
+  .well.form-actions
+    .row
+      .span4
+        = link_to t('devise.labels.cancel_my_account'), registration_path(resource_name), :data => { :confirm => t("devise.labels.are_you_sure_delete") }, :class=>"btn btn-danger", :method => :delete
+      .offset2.span2
+        = link_to t('devise.labels.back'), :back, :class=> "btn"
